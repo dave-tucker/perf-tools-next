@@ -1,0 +1,57 @@
+[package]
+name = "perf-rs"
+version = "6.11.0-rc.1"
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+edition.workspace = true
+build = "build.rs"
+
+[features]
+dwarf = []
+dwarf_getlocations = []
+libaudit = []
+# libaudit and syscall-table are mutually exclusive
+syscall_table = []
+libbfd = []
+debuginfod = []
+libelf = []
+libnuma = []
+numa_num_possible_cpus = []
+libperl = []
+libpython = []
+libslang = []
+libcrypto = []
+libunwind = []
+libdw-dwarf-unwind = []
+libcapstone = []
+zlib = []
+lzma = []
+get_cpuid = []
+bpf = []
+aio = []
+zstd = []
+libpfm4 = []
+libtraceevent = []
+bpf_skeletons = []
+dwarf-unwind-support = []
+libopencsd = []
+
+[dependencies]
+anyhow = { workspace = true, features = ["std"] }
+clap = { workspace = true, features = [
+    "derive",
+    "help",
+    "std",
+    "suggestions",
+    "usage",
+] }
+ratatui = { workspace = true }
+shadow-rs = { workspace = true }
+colored = { workspace = true }
+pager = { workspace = true }
+textwrap = { workspace = true }
+
+[build-dependencies]
+shadow-rs = { workspace = true }

@@ -1,0 +1,23 @@
+[workspace]
+members = ["perf-rs", "xtask"]
+
+resolver = "2"
+
+default-members = ["perf-rs", "xtask"]
+
+[workspace.package]
+authors = ["Perf Contributors"]
+license = "GPL-2.0"
+repository = "https://git.kernel.org/pub/scm/linux/kernel/git/perf/perf-tools-next.git"
+homepage = "https://perf.wiki.kernel.org/index.php/Main_Page"
+edition = "2021"
+
+[workspace.dependencies]
+anyhow = { version = "1", default-features = false }
+clap = { version = "4", default-features = false }
+ratatui = { version = "0.28.0", default-features = false }
+shadow-rs = { version = "0.32.0", default-features = false }
+colored = { version = "2", default-features = false }
+pager = { version = "0.16.1", default-features = false }
+textwrap = { version = "0.16.1", default-features = false }
+bindgen = { version = "0.70.1", default-features = false }

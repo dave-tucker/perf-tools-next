@@ -1,0 +1,28 @@
+
+[package]
+name = "xtask"
+version = "0.1.0"
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "xtask"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = { workspace = true, features = ["std"] }
+clap = { workspace = true, features = [
+    "derive",
+    "help",
+    "std",
+    "suggestions",
+    "usage",
+] }
+bindgen = { workspace = true, features = [
+    "logging",
+    "prettyplease",
+    "runtime",
+] }
