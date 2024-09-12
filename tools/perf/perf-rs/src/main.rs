@@ -4,6 +4,7 @@
 
 mod generated;
 mod list;
+mod pmu_events;
 mod stat;
 mod version;
 

@@ -516,7 +516,7 @@ mod tests {
         assert_eq!(
             s,
             Some(
-                "cpu-cycles OR cycles                                 [Hardware event]".to_string()
+                "  cpu-cycles OR cycles                               [Hardware event]".to_string()
             )
         );
     }
@@ -548,7 +548,7 @@ mod tests {
         assert_eq!(
             s,
             Some(
-                "sched:sched_switch                                   [Tracepoint event]\n         tracepoint/config=0x1/"
+                "  sched:sched_switch                                 [Tracepoint event]\n         tracepoint/config=0x1/"
                     .to_string()),
         );
     }

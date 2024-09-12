@@ -52,6 +52,7 @@ shadow-rs = { workspace = true }
 colored = { workspace = true }
 pager = { workspace = true }
 textwrap = { workspace = true }
+combine = { workspace = true, features = ["std"] }
 
 [build-dependencies]
 shadow-rs = { workspace = true }

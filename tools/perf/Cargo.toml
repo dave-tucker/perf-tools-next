@@ -21,3 +21,4 @@ colored = { version = "2", default-features = false }
 pager = { version = "0.16.1", default-features = false }
 textwrap = { version = "0.16.1", default-features = false }
 bindgen = { version = "0.70.1", default-features = false }
+combine = { "version" = "4", default-features = false }
